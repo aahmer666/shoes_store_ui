@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shoes_store_ui/Model.dart';
-import 'package:shoes_store_ui/ShoesDetails.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -133,8 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: InkWell(
             onTap: () {
               Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) =>
-                      HomeScreen())); //ShoesDetails(shoesDetails: shoes,)));
+                  builder: (context) => HomeScreen()));
             },
             child: Container(
                 width: 200.0,
